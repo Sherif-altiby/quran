@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Sherif-altiby/quran/static/css/main.32a31a8e.css",
+    "main.js": "/Sherif-altiby/quran/static/js/main.9b8031c5.js",
+    "static/media/3.avif": "/Sherif-altiby/quran/static/media/3.fa48a4281c865be137ae.avif",
+    "static/media/2.webp": "/Sherif-altiby/quran/static/media/2.6b29106c0a8eda94f7b9.webp",
+    "static/media/1.avif": "/Sherif-altiby/quran/static/media/1.3ac6037988356834c557.avif",
+    "static/media/abduallah_kamel.jpg": "/Sherif-altiby/quran/static/media/abduallah_kamel.16b03f91b56887530e61.jpg",
+    "static/media/mohamed-ayoub.jpg": "/Sherif-altiby/quran/static/media/mohamed-ayoub.3a960037f7983fe8be6e.jpg",
+    "static/media/4.avif": "/Sherif-altiby/quran/static/media/4.2c02ac45595cad28e6a3.avif",
+    "static/media/abdelbasset-profile.webp": "/Sherif-altiby/quran/static/media/abdelbasset-profile.914f2cf6df1780ca691a.webp",
+    "static/media/abdul-rahman-al-sudais-profile.avif": "/Sherif-altiby/quran/static/media/abdul-rahman-al-sudais-profile.719ca497e243b9e05628.avif",
+    "static/media/nasser.jpg": "/Sherif-altiby/quran/static/media/nasser.2e2175fe6cbb748cbed9.jpg",
+    "static/media/mishary-rashid-alafasy-profile.avif": "/Sherif-altiby/quran/static/media/mishary-rashid-alafasy-profile.9cfd028bdedf82a03d40.avif",
+    "static/media/background.jpg": "/Sherif-altiby/quran/static/media/background.c347a5c40efeb96b150f.jpg",
+    "static/media/bana.jpg": "/Sherif-altiby/quran/static/media/bana.31f2f28dc19d3e2ce145.jpg",
+    "static/media/saaoud.jpg": "/Sherif-altiby/quran/static/media/saaoud.8b309925e9cb37ac2b34.jpg",
+    "static/media/hani-ar-rifai-profile.avif": "/Sherif-altiby/quran/static/media/hani-ar-rifai-profile.bb4583391e96d20fceac.avif",
+    "static/media/mahmoud-khalil-al-hussary-profile.avif": "/Sherif-altiby/quran/static/media/mahmoud-khalil-al-hussary-profile.d3502750875a7913a5d8.avif",
+    "static/media/mohamed-siddiq-el-minshawi-profile.avif": "/Sherif-altiby/quran/static/media/mohamed-siddiq-el-minshawi-profile.1bd3c5628b773fc08c7f.avif",
+    "index.html": "/Sherif-altiby/quran/index.html",
+    "main.32a31a8e.css.map": "/Sherif-altiby/quran/static/css/main.32a31a8e.css.map",
+    "main.9b8031c5.js.map": "/Sherif-altiby/quran/static/js/main.9b8031c5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32a31a8e.css",
+    "static/js/main.9b8031c5.js"
+  ]
+}
