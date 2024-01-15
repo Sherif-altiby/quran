@@ -1,0 +1,86 @@
+.last_read{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &.dark{
+    background-color: var(--background-dark);
+    h2{
+      color: var(--light);
+    }
+    .last_read_content{
+      .box{
+        background-color: transparent;
+        border-color: var(--border-dark-surah);
+        color: var(--light);
+        &:hover{
+          background-color: var(--background-dark-hover-surah);
+        }
+        .surah{
+          background-color: var(--background-second-dark);
+        }
+      }
+    }
+  }
+  &.rose{
+    background-color: var(--rose);
+    h2{
+      color: var(--dark);
+    }
+    .last_read_content{
+      .box{
+        background-color: transparent;
+        border-color: var(--border-rose-color);
+        color: var(--dark);
+        &:hover{
+          background-color: #f0e2cc;
+          border-color: var(--border-rose-color-hover);
+        }
+        .surah{
+          background-color: #f0e2cc;
+        }
+      }
+    }
+  }
+  h2{
+    direction: rtl;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--dark);
+  }
+  .last_read_content{
+  .swiper_last_read{
+    padding: 0 60px;
+  }
+    .box{
+      width: 200px;
+      border: 1px solid var(--border-color);
+      border-radius: 5px;
+      padding: 10px;
+      transition: var(--main-transition);
+      margin: auto;
+      cursor: pointer;
+      &:hover{
+        border-color: var(--color-secondary-bgimg);
+        background-color: #f4fffe;
+      }
+      .text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Amiri Quran';
+        font-weight: bold;
+      }
+      .surah{
+        background-color: var(--border-color);
+        text-align: center;
+        margin: 10px;
+        border-radius: 5px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: var(--main-transition);
+      }
+    }
+  }
+}

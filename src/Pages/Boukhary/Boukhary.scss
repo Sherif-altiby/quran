@@ -1,0 +1,183 @@
+.boukhary {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &.dark {
+    background-color: var(--background-dark);
+    h1{
+      color: #8d8d8d;
+    }
+    h3 {
+      color: var(--color-text-button);
+      border-color: var(--border-dark-surah);
+    }
+    .all_categories {
+      .category {
+        color: var(--light);
+        border-color: var(--border-dark-surah);
+        &:hover {
+          background-color: var(--background-dark-hover-surah);
+        }
+      }
+    }
+  }
+  &.rose {
+    background-color: var(--background-rose);
+    h3{
+      color: var(--border-rose-color-hover);
+      border-color: var(--border-rose-color); 
+    }
+    .all_categories {
+      .category {
+        color: var(--dark);
+        border-color: var(--border-rose-color);
+        &:hover {
+          background-color: var(--surah-rose-hover-background);
+          border-color: var(--border-rose-color-hover);
+        }
+      }
+    }
+  }
+  h3 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-color);
+  }
+  h1 {
+    font-weight: normal;
+    text-align: center;
+    margin: 10px 0;
+    font-family: "Amiri Quran", serif;
+  }
+  .all_categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+    .category {
+      border: 1px solid var(--border-color);
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      height: 70px;
+      transition: var(--main-transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Amiri Quran", serif;
+      font-size: 26px;
+      width: calc(100% / 3 - 7px);
+      line-height: 1;
+      text-align: center;
+      &:hover {
+        border-color: var(--color-secondary-bgimg);
+        background-color: #f4fffe;
+      }
+    }
+  }
+}
+
+.hadiths {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &.dark {
+    background-color: var(--background-dark);
+    color: var(--border-color);
+    .all_hadiths {
+      .hadith {
+        border-color: var(--background-dark-surah);
+        &:hover {
+          border-color: var(--background-dark-hover-surah);
+          background-color: var(--background-second-dark);
+        }
+      }
+    }
+  }
+
+  &.rose {
+    background-color: var(--background-rose);
+    .all_hadiths {
+      .hadith {
+        border-color: var(--border-rose-color);
+        &:hover {
+          background-color: var(--surah-rose-hover-background);
+          border-color: var(--border-rose-color-hover);
+        }
+      }
+    }
+  }
+  .all_hadiths {
+    .hadith {
+      text-align: center;
+      font-family: "Amiri Quran", serif;
+      margin: 20px 0;
+      padding: 20px;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      font-size: 25px;
+      transition: var(--main-transition);
+      &:hover {
+        border-color: var(--color-secondary-bgimg);
+        background-color: #f4fffe;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .boukhary {
+    .all_categories {
+      .category {
+        font-size: 20px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .boukhary {
+    .all_categories {
+      .category {
+        width: calc(100% / 2 - 10px);
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .boukhary {
+    h3{
+      font-size: 15px;
+      line-height: 1.6;
+    }
+    h1{
+      font-size: 25px;
+    }
+    .all_categories {
+      .category {
+        width: 100%;
+
+      }
+    }
+    .hadiths{
+      .all_hadiths{
+        .hadith{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .boukhary {
+    h3{
+      font-size: 13px;
+
+    }
+    h1{
+      font-size: 20px;
+    }
+  }
+}

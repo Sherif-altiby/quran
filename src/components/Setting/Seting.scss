@@ -1,0 +1,273 @@
+.setting {
+  position: fixed;
+  background-color: var(--light);
+  top: 0;
+  z-index: 3;
+  height: 100vh;
+  width: 400px;
+  left: -400px;
+  transition: var(--main-transition);
+  box-shadow: 0 0 5px var(--border-color);
+
+  &.block {
+    left: 0;
+  }
+  &.dark {
+    background-color: var(--background-second-dark);
+    box-shadow: 0 0 5px #232323;
+    .setting_header {
+      box-shadow: 0 0 0;
+      border-bottom-color: var(--border-dark-surah);
+      h3 {
+        color: var(--light);
+      }
+      .exite {
+        background-color: var(--light);
+        color: var(--dark);
+        &:hover {
+          background-color: var(--dark);
+          color: var(--light);
+        }
+      }
+    }
+    .theme {
+      border-bottom-color: var(--border-dark-surah);
+      h3 {
+        color: var(--light);
+      }
+      ul {
+        background-color: var(--background-dark);
+        li {
+          color: var(--light);
+          &.active {
+            background-color: var(--background-second-dark);
+          }
+          .icon {
+            i {
+              color: var(--light);
+            }
+          }
+        }
+      }
+    }
+    .quran_font {
+      border-bottom-color: var(--border-dark-surah);
+      h3 {
+        color: var(--light);
+      }
+      ul {
+        background-color: var(--background-dark);
+        li {
+          color: var(--light);
+          &.active {
+            background-color: var(--background-second-dark);
+          }
+        }
+      }
+      .font-weight {
+        p {
+          color: var(--light);
+        }
+        .font_weight_control {
+          button {
+            background-color: var(--light);
+            color: var(--dark);
+            &:hover {
+              background-color: var(--dark);
+              color: var(--light);
+            }
+          }
+        }
+      }
+    }
+    .return_setting {
+      button {
+        background-color: var(--light);
+        color: var(--dark);
+        &:hover {
+          background-color: var(--dark);
+          color: var(--light);
+        }
+      }
+    }
+  }
+  &.rose {
+    background-color: var(--rose);
+    box-shadow: 0 0 5px #807564;
+    .setting_header {
+      border-bottom-color: var(--border-rose-color-hover);
+    }
+    .theme,
+    .quran_font {
+      ul {
+        background-color: var(--background-rose);
+      }
+    }
+  }
+  .setting_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 61px;
+    border-bottom: 1px solid var(--border-color);
+    padding: 20px;
+    h3 {
+      font-size: 23px;
+      font-weight: normal;
+    }
+    .exite {
+      font-weight: bold;
+      cursor: pointer;
+      background-color: var(--black);
+      color: var(--light);
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      transition: var(--main-transition);
+      &:hover {
+        background-color: var(--border-color);
+        color: var(--dark);
+      }
+    }
+  }
+  .theme {
+    padding: 20px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 40px;
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+      direction: rtl;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--border-color);
+      padding: 5px 10px;
+      border-radius: 40px;
+      direction: rtl;
+      margin-top: 30px;
+      li {
+        display: flex;
+        gap: 10px;
+        border-radius: 40px;
+        text-align: center;
+        padding: 5px 20px;
+        cursor: pointer;
+        &.active {
+          .icon {
+            i {
+              font-size: 18px;
+            }
+          }
+        }
+        &.active {
+          background-color: var(--light);
+        }
+        .text {
+          font-weight: normal;
+          font-size: 14px;
+        }
+        .icon {
+          i {
+            font-size: 0px;
+            color: var(--border-rose-color-hover);
+            transition: var(--main-transition);
+          }
+        }
+      }
+    }
+  }
+  .quran_font {
+    padding: 20px;
+    border-bottom: 1px solid #000;
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+      direction: rtl;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: var(--border-color);
+      padding: 5px 10px;
+      border-radius: 40px;
+      direction: rtl;
+      margin-top: 30px;
+      li {
+        display: flex;
+        gap: 10px;
+        border-radius: 40px;
+        text-align: center;
+        padding: 5px 20px;
+        cursor: pointer;
+        &.active {
+          background-color: var(--light);
+        }
+      }
+    }
+    .font-weight {
+      display: flex;
+      direction: rtl;
+      align-items: center;
+      justify-content: space-between;
+      margin: 30px 0;
+      .font_weight_control {
+        display: flex;
+        direction: rtl;
+        align-items: center;
+        gap: 20px;
+        button {
+          border: none;
+          width: 50px;
+          height: 35px;
+          background: var(--dark);
+          color: var(--light);
+          font-weight: bold;
+          font-size: 25px;
+          border-radius: 5px;
+          transition: var(--main-transition);
+          cursor: pointer;
+          &.block{
+            pointer-events: none;
+          }
+          &:hover {
+            background-color: var(--border-color);
+            color: var(--dark);
+          }
+        }
+      }
+    }
+  }
+  .return_setting {
+    text-align: center;
+    margin-top: 50px;
+    button {
+      border: none;
+      background: var(--dark);
+      color: var(--light);
+      font-weight: normal;
+      font-size: 20px;
+      border-radius: 5px;
+      transition: var(--main-transition);
+      cursor: pointer;
+      padding: 10px 20px;
+      &:hover {
+        background-color: var(--border-color);
+        color: var(--dark);
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .setting {
+    width: 100%;
+    left: -100%;
+  }
+}

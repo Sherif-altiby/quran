@@ -1,0 +1,103 @@
+footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &.dark{
+    background-color: var(--background-dark);
+    h2, h3{
+      color: var(--light);
+    }
+  }
+  &.rose{
+    background-color: var(--background-rose);
+  }
+  .footer_content {
+    direction: rtl;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    .footer_text {
+      width: 400px;
+      .footer_header {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        h2 {
+          font-size: 28px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.5;
+        color: var(--border-dark-surah);
+      }
+    }
+    .footer_links {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      direction: ltr;
+      ul {
+        li {
+          h2 {
+            font-weight: normal;
+            font-size: 20px;
+          }
+          a{
+            text-decoration: none;
+            color: var(--border-dark-surah);
+             transition: var(--main-transition);
+             &:hover{
+              text-decoration: underline;
+             } 
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1024px) {
+  footer{
+    .footer_content{
+      gap: 30px;
+  
+    }
+  }
+}
+
+@media (max-width: 992px){
+  footer{
+    .footer_content{
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 425px){
+  footer{
+    .footer_content{
+      .footer_text{
+        width: 100%;
+        text-align: center;
+        .footer_header{
+          gap: 5px;
+          flex-direction: column;
+          margin-bottom: 10px;
+        }
+      }
+    .footer_links{
+       flex-direction: column;
+       gap: 20px;
+       justify-content: center;
+       ul{
+        width: 100%;
+        text-align: center;
+       }
+    }
+    }
+  }
+}

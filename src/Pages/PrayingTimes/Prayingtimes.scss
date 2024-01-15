@@ -1,0 +1,72 @@
+.praying {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &.dark{
+    background-color: var(--background-dark);
+    .all_times{
+      .time{
+        background-color: var(--background-second-dark);
+        border-color: var(--background-second-dark);
+        color: var(--swiper-theme-color);
+      }
+    }
+  }
+  &.rose{
+    background-color: var(--background-rose);
+    .all_times{
+      .time{
+        background-color: var(--border-rose-color-hover);
+        border-color: var(--border-rose-color-hover);
+        color: var(--rose);
+      }
+    }
+  }
+  .all_times {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    direction: rtl;
+    .time {
+      border: 1px solid var(--border-color);
+      padding: 5px 20px;
+      transition: var(--main-transition);
+      font-size: 30px;
+      text-align: center;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      font-weight: normal;
+      font-family: "Amiri Quran", serif;
+      color: var(--color-secondary-bgimg);
+      line-height: 1.7;
+      background-color: var(--border-color);
+      h3 {
+        font-weight: normal;
+        margin-top: -25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .praying{
+    .all_times{
+      gap: 20px;
+      .time{
+        font-size: 20px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}

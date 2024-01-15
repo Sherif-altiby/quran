@@ -1,0 +1,126 @@
+.allreaders {
+  &.dark {
+    .search {
+      .overlay {
+        filter: saturate(0.1) brightness(0.3) contrast(1.1);
+      }
+      .search_area {
+        background: var(--background-second-dark);
+        color: var(--light);
+      }
+    }
+    .readers {
+      background-color: var(--background-dark);
+      h3 {
+        color: var(--light);
+      }
+      .readers_container {
+        .reader {
+          .name {
+            color: var(--light);
+            background-color: var(--border-dark-surah);
+          }
+        }
+      }
+    }
+  }
+  &.rose {
+    .search {
+      .overlay {
+        filter: sepia(1);
+      }
+      .search_area {
+        background: var(--background-rose);
+        color: var(--dark);
+      }
+    }
+    .readers {
+      background-color: var(--surah-rose-hover-background);
+      .readers_container {
+        .reader {
+          .name {
+            color: var(--light);
+            background-color: var(--border-rose-color-hover);
+          }
+        }
+      }
+    }
+  }
+  .search {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    color: var(--light);
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background-image: url("../../img//background.jpg");
+      z-index: -1;
+    }
+    h2 {
+      font-size: 50px;
+      font-weight: normal;
+    }
+    .search_area {
+      display: flex;
+      align-items: center;
+      width: 800px;
+      background-color: var(--light);
+      height: 40px;
+      padding: 0 10px;
+      gap: 10px;
+      border-radius: 10px;
+      color: var(--dark);
+      input {
+        flex: 1;
+        height: 100%;
+        border: 0;
+        outline: 0;
+        direction: rtl;
+        font-size: 16px;
+        background-color: inherit;
+        color: inherit;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px){
+  .allreaders{
+    .search{
+      .search_area{
+        width: 700px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px){
+  .allreaders{
+    .search{
+      .search_area{
+        width: 500px;
+      }
+    }
+  }
+}
+@media (max-width: 550px){
+  .allreaders{
+    .search{
+      padding-left: 20px;
+      padding-right: 20px;
+      .search_area{
+        width: 100%;
+      }
+    }
+    .readers{
+      h3{
+        text-align: center;
+      }
+    }
+  }
+}

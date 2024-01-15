@@ -1,0 +1,211 @@
+.search_side {
+  position: fixed;
+  top: 0;
+  left: -400px;
+  width: 400px;
+  background-color: var(--light);
+  z-index: 3;
+  height: 100vh;
+  box-shadow: 0 0 5px var(--border-color);
+  transition: var(--main-transition);
+  overflow-y: scroll;
+  &::-webkit-scrollbar{
+    width: 5px;
+  }
+  &.block{
+    left: 0;
+  }
+  &.dark {
+    background-color: var(--background-second-dark);
+    box-shadow: 0 0 5px #232323;
+    .search_headrer {
+      border-color: var(--border-dark-surah);
+      .exite {
+        background-color: var(--light);
+        color: var(--dark);
+        &:hover {
+          background-color: var(--dark);
+          color: var(--light);
+        }
+      }
+      input {
+        color: var(--light);
+      }
+      .icon {
+        i {
+          color: var(--light);
+        }
+      }
+    }
+    h3 {
+      color: var(--light);
+      border-color: var(--border-dark-surah);
+    }
+    ul {
+      li {
+        &:hover {
+          .icon {
+            i {
+              color: var(--light);
+            }
+          }
+        }
+        border-color: var(--border-dark-surah);
+        .icon {
+          i {
+            color: var(--border-dark-surah);
+          }
+        }
+        .text {
+          color: var(--light);
+        }
+      }
+    }
+    .search_surah{
+      .surah{
+        border-color: var(--border-dark-surah);
+      color: var(--light);
+      &:hover{
+        background-color: #2e3338;
+      }
+      }
+    }
+  }
+
+  &.rose {
+    background-color: var(--rose);
+    box-shadow: 0 0 5px #807564;
+    .search_headrer {
+      border-color: var(--border-dark-surah);
+    }
+    h3 {
+      border-color: var(--border-rose-color-hover);
+    }
+    ul {
+      li {
+        border-color: var(--border-rose-color-hover);
+        .icon {
+          i {
+          color: var(--border-rose-color-hover);
+          }
+        }
+      }
+    }
+    .search_surah{
+      .surah{
+        border-color: var(--border-rose-color);
+        &:hover{
+          background-color: var(--surah-rose-hover-background);
+          border-color: var(--border-rose-color-hover);
+        }
+      }
+    }
+  }
+
+  .search_headrer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 61px;
+    border-bottom: 1px solid var(--border-color);
+    .exite {
+      font-weight: bold;
+      cursor: pointer;
+      background-color: var(--black);
+      color: var(--light);
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      transition: var(--main-transition);
+      &:hover {
+        background-color: var(--border-color);
+        color: var(--dark);
+      }
+    }
+    input {
+      border: 0;
+      font-size: 20px;
+      outline: 0;
+      font-weight: normal;
+      background-color: inherit;
+    }
+    .icon {
+      i {
+        color: var(--border-rose-color-hover);
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+  h3 {
+    font-weight: bold;
+    font-size: 20px;
+    direction: rtl;
+    border-bottom: 1px solid var(--border-color);
+    padding: 10px;
+  }
+
+  ul {
+    direction: rtl;
+    li {
+      direction: ltr;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px;
+      cursor: pointer;
+      &:hover {
+        .icon {
+          i {
+            color: var(--black);
+          }
+        }
+      }
+      .icon {
+        i {
+          color: var(--border-color);
+          transition: var(--main-transition);
+        }
+      }
+      .text {
+        font-size: 14px;
+      }
+    }
+  }
+  .search_surah{
+    padding: 20px;
+    .surah{
+      width: 100%;
+      display: flex;
+      align-items: self-end;
+      justify-content: center;
+      text-align: center;
+      border: 1px solid var(--border-color);
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      height: 70px;
+      transition: var(--main-transition);
+      font-size: 35px;
+      margin-bottom: 20px;
+      font-family: "Amiri Quran", serif;
+      &:hover{
+        border-color: var(--color-secondary-bgimg);
+        background-color: #f4fffe;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .search_side{
+    width: 100%;
+    left: -100%;
+  }
+}

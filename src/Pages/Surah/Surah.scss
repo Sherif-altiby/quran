@@ -1,0 +1,125 @@
+.surah_raed {
+  min-height: calc(100vh - 70px);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: "Amiri Quran", serif;
+  .btn{
+    width: fit-content;
+    margin: auto;
+    background-color: var(--color-secondary-bgimg);
+    color: var(--border-color);
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: var(--main-transition);
+    font-family: 'Noto Naskh Arabic';
+    margin-top: 50px;
+    &:hover{
+      background-color: var(--border-color);
+      color: var(--color-secondary-bgimg);
+    }
+  }
+
+  &.dark{
+    background-color: var(--background-dark);
+    .btn{
+      background-color: var(--black);
+      &:hover{
+        background-color: var(--background-second-dark);
+      }
+    }
+    h2, h3{
+      color: var(--light);
+    }
+    .all_ayahs{
+      .surah_text{
+        span{
+          color: var(--light);
+          &.number{
+            color: var(--light);
+          }
+        }
+      }
+    }
+  }
+  &.rose{
+    background-color: var(--background-rose);
+    .btn{
+      background-color: var(--border-rose-color-hover);
+      &:hover{
+        background-color: var(--border-rose-color);
+      }
+    }
+    h2, h3{
+      color: var(--dark);
+    }
+    .all_ayahs{
+      .surah_text{
+        span{
+          color: var(--dark);
+          &.number{
+            color: var(--dark);
+          }
+        }
+      }
+    }
+  }
+   h2{
+    font-size: 35px;
+    text-align: center;
+    color: var(--border-rose-color-hover);
+   }
+   h3{
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: var(--border-rose-color-hover);
+   }
+  .all_ayahs {
+    direction: rtl;
+    text-align: center;
+    .surah_text {
+      display: inline;
+
+      span {
+        font-size: 23px;
+        color: var(--border-rose-color-hover);
+
+        &.number {
+          color: var(--black);
+          position: relative;
+          display: inline-block;
+          margin: 0 10px;
+          font-size: 16px;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 7px;
+            left: 0px;
+            width: 30px;
+            height: 30px;
+            border: 1px solid var(--color-secondary-bgimg);
+            border-radius: 50%;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: -4px;
+            width: 38px;
+            height: 38px;
+            border: 1px solid var(--color-secondary-bgimg);
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+}

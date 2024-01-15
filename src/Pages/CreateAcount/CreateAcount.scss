@@ -1,0 +1,139 @@
+.create_acount {
+  height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  &.dark{
+    background-color: var(--background-dark);
+    h2{
+      color: var(--light);
+    }
+    .sign_google{
+      p, i{
+        color: var(--light);
+      }
+      
+    }
+  }
+  &.rose{
+    background-color: var(--background-rose);
+    .sign_google{
+      border-color: var(--dark);
+    }
+  }
+  h2 {
+    color: var(--background-dark-hover-surah);
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  .sign_google,
+  .sign_facebook,
+  .sign_apple {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: var(--main-transition);
+    gap: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    p {
+      font-weight: bold;
+      font-size: 17px;
+      color: var(--background-second-dark);
+    }
+    i {
+      font-size: 20px;
+    }
+  }
+  .sign_google {
+    border: 1px solid var(--border-color);
+  }
+  .sign_facebook {
+    background-color: #4267b2;
+    border: 1px solid #4267b2;
+    &:hover {
+      background-color: var(--light);
+      border-color: var(--border-color);
+      p {
+        color: var(--background-second-dark);
+      }
+      .icon {
+        background-color: var(--dark);
+        color: var(--light);
+        transition: var(--main-transition);
+      }
+    }
+    p {
+      color: var(--light);
+    }
+    .icon {
+      background: var(--light);
+      border-radius: 50%;
+      display: flex;
+      width: 30px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .sign_apple{
+    background-color: var(--dark);
+    transition: var(--main-transition);
+    &:hover {
+      background-color: var(--light);
+      border-color: var(--border-color);
+      p {
+        color: var(--background-second-dark);
+      }
+      .icon {
+        background-color: var(--dark);
+        color: var(--light);
+        transition: var(--main-transition);
+      }
+    } 
+    p{
+      color: var(--light);
+    }
+    .icon {
+      background: var(--light);
+      border-radius: 50%;
+      display: flex;
+      width: 30px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      transition: var(--main-transition);
+    }
+  }
+  .sign_email{
+    margin: 10px;
+    cursor: pointer;
+    transition: var(--main-transition);
+    border-radius: 5px;
+    padding: 10px;
+    width: 400px;
+    text-align: center;
+    &:hover{
+      background-color: #2ca4ab3d;
+    }
+    p{
+      font-size: 17px;
+      font-weight: bold;
+      color: #2ca4ab;
+    }
+  }
+}
+
+@media (max-width: 425px){
+  .create_acount{
+    .sign_apple, .sign_email, .sign_facebook, .sign_google{
+      width: 300px;
+    }
+  }
+}

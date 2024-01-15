@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
+
+:root {
+  --light: #fff;
+  --dark: #121212;
+  --rose: #fff7ea;
+  --black: #000;
+  --color-secondary-bgimg: #2ca4ab;
+  --color-text-button: #666;
+  --background-second-dark: #343a40;
+  --background-dark: #1f2125;
+  --background-rose: #f8ebd5;
+  --background-dark-hover-surah: #212529;
+  --border-rose-color: #dbccb3;
+  --border-rose-color-hover: #72603f;
+  --border-dark-surah: #464b50;
+  --border-color: #ebeef0;
+  --surah-rose-hover-background: #efe2cd;
+  --main-transition: 0.3s;
+}
+
+body {
+  font-family: "Noto Naskh Arabic", serif;
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 2px; /* width of the scrollbar */
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #888; /* color of the thumb */
+    border-radius: 6px; /* roundness of the thumb */
+  }
+}
+.app{
+  &.hidden{
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: 100%;
+  padding: 0 100px;
+  margin: auto;
+}
+@media (max-width: 992px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+@media (max-width: 425) {
+  .container {
+    padding: 0 10px;
+  }
+}

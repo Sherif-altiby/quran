@@ -1,0 +1,445 @@
+.all_surah {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &.dark {
+    background-color: var(--background-dark);
+    .all_surah_content {
+      .surah {
+        border-color: var(--border-dark-surah);
+        &:hover {
+          background-color: var(--background-dark-hover-surah);
+        }
+        .text {
+          .ayah_name {
+            color: var(--light);
+          }
+          .ayah_count {
+            background-color: var(--background-second-dark);
+          }
+        }
+      }
+    }
+  }
+
+  &.rose {
+    background-color: var(--background-rose);
+    .all_surah_content {
+      .surah {
+        border-color: var(--border-rose-color);
+        &:hover {
+          background-color: var(--surah-rose-hover-background);
+          border-color: var(--border-rose-color-hover);
+          .text {
+            .ayah_count {
+              background-color: var(--border-rose-color-hover);
+            }
+          }
+          .ayah_numbers {
+            color: var(--border-rose-color-hover);
+          }
+        }
+        .text {
+          .ayah_name {
+            color: var(--dark);
+          }
+          .ayah_count {
+            background-color: #f0e2cc;
+          }
+        }
+      }
+    }
+  }
+
+  .all_surah_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    direction: rtl;
+    .surah {
+      width: calc(100% / 3 - 8px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid var(--border-color);
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      height: 70px;
+      transition: var(--main-transition);
+      direction: ltr;
+      &:hover {
+        border-color: var(--color-secondary-bgimg);
+        background-color: #f4fffe;
+
+        .text {
+          .ayah_count {
+            background-color: var(--color-secondary-bgimg);
+          }
+        }
+        .ayah_numbers {
+          color: var(--color-secondary-bgimg);
+        }
+      }
+      .ayah_numbers {
+        display: flex;
+        gap: 5px;
+        color: var(--color-text-button);
+        font-weight: bold;
+      }
+      .text {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .ayah_name {
+          font-size: 17px;
+          font-weight: bold;
+          font-family: "Amiri Quran", serif;
+        }
+        .ayah_count {
+          background-color: var(--border-color);
+          width: 39px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: rotate(45deg);
+          border-radius: 5px;
+          transition: var(--main-transition);
+          span {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.all_surah_filter {
+  &.dark {
+    background-color: var(--background-dark);
+    .surah_filter {
+      ul {
+        border-bottom-color: var(--border-dark-surah);
+        li {
+          a {
+            color: var(--light);
+          }
+        }
+      }
+    }
+  }
+  &.rose {
+    background-color: var(--background-rose);
+    color: var(--dark);
+    .surah_filter {
+      ul {
+        border-bottom-color: var(--border-dark-surah);
+      }
+    }
+  }
+  .surah_filter {
+    ul {
+      display: flex;
+      direction: rtl;
+      gap: 20px;
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 0;
+      li {
+        cursor: pointer;
+        transition: var(--main-transition);
+
+        a {
+          text-decoration: none;
+          color: var(--dark);
+          padding: 10px 0;
+          &.active {
+            border-bottom: 2px solid var(--black);
+          }
+        }
+      }
+    }
+  }
+}
+
+.jus_all {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  &.dark {
+    background-color: var(--background-dark);
+    .jus_all_content {
+      .jus {
+        border-color: var(--border-dark-surah);
+        &:hover {
+          border-color: var(--color-secondary-bgimg);
+          background-color: var(--background-dark-hover-surah);
+          .jus_number {
+            background-color: var(--color-secondary-bgimg);
+          }
+        }
+        .jus_name {
+          color: var(--light);
+        }
+        .jus_number {
+          background-color: var(--background-second-dark);
+        }
+      }
+    }
+  }
+  &.rose {
+    background-color: var(--background-rose);
+    .jus_all_content {
+      .jus {
+        border-color: var(--border-rose-color);
+        &:hover {
+          background-color: var(--surah-rose-hover-background);
+          border-color: var(--border-rose-color-hover);
+          .jus_number {
+            background-color: var(--border-rose-color-hover);
+          }
+        }
+        .jus_number {
+          background-color: #f0e2cc;
+        }
+      }
+    }
+  }
+  .jus_all_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    direction: rtl;
+    .jus {
+      width: calc(100% / 3 - 8px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid var(--border-color);
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      height: 70px;
+      transition: var(--main-transition);
+      direction: ltr;
+      &:hover {
+        border-color: var(--color-secondary-bgimg);
+        background-color: #f4fffe;
+      }
+      .jus_name {
+        font-family: "Amiri Quran", serif;
+        font-size: 20px;
+      }
+      .jus_number {
+        background-color: var(--border-color);
+        width: 39px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(45deg);
+        border-radius: 5px;
+        transition: var(--main-transition);
+        span {
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+}
+
+.wahie {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &.dark {
+    background-color: var(--background-dark);
+    .wahie_content {
+      .surah {
+        border-color: var(--border-dark-surah);
+        &:hover {
+          background-color: var(--background-dark-hover-surah);
+        }
+        .text {
+          .surah_name {
+            color: var(--light);
+          }
+          .surah_id{
+            background-color: var(--background-second-dark);
+          }
+        }
+      }
+    }
+  }
+
+  &.rose {
+    background-color: var(--background-rose);
+    .wahie_content {
+      .surah {
+        border-color: var(--border-rose-color);
+        &:hover {
+          background-color: var(--surah-rose-hover-background);
+          border-color: var(--border-rose-color-hover);
+          .surah_type {
+            color: var(--border-rose-color-hover);
+          }
+          .text {
+            .surah_id {
+              background-color: var(--border-rose-color-hover);
+            }
+
+            .surah_number {
+              color: var(--border-rose-color-hover);
+            }
+          }
+        }
+        .text {
+          .surah_id {
+            background-color: #f0e2cc;
+          }
+        }
+      }
+    }
+  }
+
+  .wahie_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    direction: rtl;
+    .surah {
+      width: calc(100% / 3 - 8px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border: 1px solid var(--border-color);
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      height: 70px;
+      transition: var(--main-transition);
+      direction: ltr;
+      &:hover {
+        border-color: var(--color-secondary-bgimg);
+        background-color: #f4fffe;
+        .surah_type {
+          color: var(--color-secondary-bgimg);
+        }
+        .text {
+          .surah_id {
+            background-color: var(--color-secondary-bgimg);
+          }
+          .surah_number {
+            color: var(--color-secondary-bgimg);
+          }
+        }
+      }
+      .surah_type {
+        font-weight: bold;
+        color: var(--color-text-button);
+        font-size: 20px;
+        transition: var(--main-transition);
+      }
+      .text {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        .surah_info {
+          display: flex;
+          flex-direction: column;
+          .surah_name {
+            font-family: "Amiri Quran", serif;
+            font-size: 22px;
+            font-weight: normal;
+          }
+        }
+        .surah_number {
+          display: flex;
+          font-size: 14px;
+          color: var(--color-text-button);
+          margin-top: -5px;
+          gap: 5px;
+          .nn {
+            font-size: 13px;
+          }
+        }
+        .surah_id {
+          background-color: var(--border-color);
+          width: 39px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transform: rotate(45deg);
+          border-radius: 5px;
+          transition: var(--main-transition);
+          span {
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .all_surah {
+    .all_surah_content {
+      .surah {
+        width: calc(100% / 2 - 10px);
+      }
+    }
+  }
+  .jus_all {
+    .jus_all_content {
+      .jus {
+        width: calc(100% / 2 - 10px);
+      }
+    }
+  }
+  .wahie {
+    .wahie_content {
+      .surah {
+        width: calc(100% / 2 - 10px);
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .all_surah {
+    .all_surah_content {
+      .surah {
+        width: 100%;
+      }
+    }
+  }
+  .jus_all {
+    .jus_all_content {
+      .jus {
+        width: 100%;
+      }
+    }
+  }
+  .wahie {
+    .wahie_content {
+      .surah {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 525px) {
+  .all_surah_filter {
+    .surah_filter {
+      ul {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

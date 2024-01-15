@@ -1,0 +1,170 @@
+.play {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 2px solid var(--border-color);
+  background-color: var(--light);
+  bottom: -60px;
+  transition: var(--main-transition);
+  &.block {
+    bottom: 0;
+  }
+  &.dark {
+    background-color: var(--black);
+    border: none;
+    .progress {
+      span {
+        &.dote,
+        &.realprogress {
+          background-color: var(--background-second-dark);
+        }
+      }
+    }
+    .audioControll {
+      .controll {
+        .loading {
+          color: var(--border-dark-surah);
+        }
+      }
+    }
+  }
+  &.rose {
+    background-color: var(--rose);
+    border-color: var(--background-rose);
+    .progress {
+      span {
+        &.dote,
+        &.realprogress {
+          background-color: var(--border-rose-color);
+        }
+      }
+    }
+    .audioControll {
+      .controll {
+        .loading {
+          color: var(--border-rose-color-hover);
+        }
+      }
+    }
+  }
+  .progress {
+    position: relative;
+    span {
+      &.dote {
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #2ca4ab;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+      }
+      &.realprogress {
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        cursor: pointer;
+        background-color: #2ca4ab;
+        right: 0;
+        top: 0;
+        direction: rtl;
+      }
+    }
+  }
+  .audioControll {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10px;
+    .controll {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      .loading {
+        color: var(--color-secondary-bgimg);
+        animation: loading 0.3s infinite linear;
+      }
+      i {
+        cursor: pointer;
+        color: var(--border-dark-surah);
+        transition: var(--main-transition);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background-color: #cccecf;
+        }
+      }
+      .more {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        cursor: pointer;
+        margin-bottom: 3px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: var(--border-dark-surah);
+        }
+        &:hover {
+          background-color: #cccecf;
+        }
+      }
+    }
+    .currnt_time,
+    .duration {
+      color: var(--border-dark-surah);
+      font-size: 15px;
+      span {
+        &.dot {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .play {
+    .audioControll {
+      .controll {
+        font-size: 13px;
+        gap: 0;
+        .more {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      i .more {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

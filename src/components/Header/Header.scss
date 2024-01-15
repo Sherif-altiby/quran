@@ -1,0 +1,131 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background-color: #ffffff;
+  box-shadow: 0 0 5px var(--border-color);
+  &.light {
+    color: var(--dark);
+  }
+  &.dark {
+    background-color: var(--background-second-dark);
+    box-shadow: 0 0 5px var(--background-dark);
+    color: var(--light);
+    .header_content {
+      .icons {
+        .icon {
+          a {
+            color: var(--light);
+          }
+        }
+      }
+    }
+  }
+  &.rose {
+    background-color: var(--rose);
+    box-shadow: 0 0 0 ;
+    .header_content {
+      .icons {
+        .icon {
+          &:hover {
+            background-color: #f0e2cc;
+            i {
+              color: var(--dark);
+            }
+          }
+        }
+      }
+      .logo {
+        .icon {
+          &:hover {
+            background-color: #f0e2cc;
+            color: var(--dark);
+          }
+        }
+      }
+    }
+  }
+  .header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20px;
+    .icons {
+      display: flex;
+      align-items: center;
+      .icon {
+        cursor: pointer;
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+        transition: var(--main-transition);
+        a {
+          color: var(--dark);
+          display: flex;
+        }
+        &:hover {
+          background: var(--color-text-button);
+          i {
+            color: var(--light);
+          }
+        }
+        i {
+          font-size: 21px;
+          transition: var(--main-transition);
+        }
+      }
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      h2 {
+        cursor: pointer;
+      }
+      .icon {
+        cursor: pointer;
+        font-size: 21px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover {
+          background-color: var(--color-text-button);
+          color: var(--light);
+        }
+
+        i {
+          transition: var(--main-transition);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 425px) {
+  .header {
+    .header_content {
+      .icons {
+        .icon {
+          i {
+            font-size: 16px;
+          }
+        }
+      }
+      .logo {
+        gap: 0px;
+        h2 {
+          font-size: 16px;
+        }
+        .icon {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

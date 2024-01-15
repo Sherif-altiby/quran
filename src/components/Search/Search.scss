@@ -1,0 +1,129 @@
+.search {
+  position: relative;
+
+  .filter {
+    position: absolute;
+    inset: 0;
+    background-image: url("../../img/background.jpg");
+    background-size: cover;
+    z-index: -1;
+  }
+  &.dark {
+    .filter{
+      filter: saturate(0.1) brightness(0.3) contrast(1.1);
+    }
+  }
+  &.rose {
+    .filter{
+      filter: sepia(1);
+    }
+  }
+  .search_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    .quran_text {
+      width: 250px;
+      fill: #fff;
+      margin-bottom: 30px;
+    }
+    button {
+      width: 100%;
+      border: none;
+      border-radius: 30px;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      font-size: 20px;
+      cursor: pointer;
+      .icon {
+        i {
+          color: var(--color-secondary-bgimg);
+        }
+      }
+      .text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        span {
+          color: var(--color-text-button);
+          font-weight: normal;
+          font-size: 18px;
+          transition: var(--main-transition);
+        }
+        .icon {
+          i {
+            color: var(--color-text-button);
+          }
+        }
+      }
+      &:hover {
+        .text {
+          span {
+            color: var(--dark);
+          }
+        }
+      }
+    }
+    ul {
+      display: flex;
+      gap: 20px;
+      margin-top: 30px;
+      li {
+        background-color: var(--light);
+        padding: 5px 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: var(--main-transition);
+        &:hover {
+          color: var(--color-text-button);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .search {
+    .search_content {
+      ul {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .search {
+    .search_content {
+      .quran_text {
+        width: 170px;
+      }
+      button {
+        height: 40px;
+        .icon {
+          i {
+            font-size: 16px;
+          }
+        }
+        .text {
+          span {
+            font-size: 15px;
+            font-weight: bold;
+          }
+        }
+      }
+      ul {
+        gap: 10px;
+        li {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
