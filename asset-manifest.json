@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/quran/static/css/main.4d7e4bb5.css",
-    "main.js": "/quran/static/js/main.948f4bd1.js",
+    "main.js": "/quran/static/js/main.7efac6f2.js",
     "static/media/3.avif": "/quran/static/media/3.fa48a4281c865be137ae.avif",
     "static/media/2.webp": "/quran/static/media/2.6b29106c0a8eda94f7b9.webp",
     "static/media/1.avif": "/quran/static/media/1.3ac6037988356834c557.avif",
@@ -20,10 +20,10 @@
     "static/media/mohamed-siddiq-el-minshawi-profile.avif": "/quran/static/media/mohamed-siddiq-el-minshawi-profile.1bd3c5628b773fc08c7f.avif",
     "index.html": "/quran/index.html",
     "main.4d7e4bb5.css.map": "/quran/static/css/main.4d7e4bb5.css.map",
-    "main.948f4bd1.js.map": "/quran/static/js/main.948f4bd1.js.map"
+    "main.7efac6f2.js.map": "/quran/static/js/main.7efac6f2.js.map"
   },
   "entrypoints": [
     "static/css/main.4d7e4bb5.css",
-    "static/js/main.948f4bd1.js"
+    "static/js/main.7efac6f2.js"
   ]
 }
