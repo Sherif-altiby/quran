@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/quran/static/css/main.4d7e4bb5.css",
-    "main.js": "/quran/static/js/main.e9ab0660.js",
+    "main.css": "/quran/static/css/main.705f0223.css",
+    "main.js": "/quran/static/js/main.58c2f69e.js",
     "static/media/3.avif": "/quran/static/media/3.fa48a4281c865be137ae.avif",
     "static/media/2.webp": "/quran/static/media/2.6b29106c0a8eda94f7b9.webp",
     "static/media/1.avif": "/quran/static/media/1.3ac6037988356834c557.avif",
@@ -19,11 +19,11 @@
     "static/media/mahmoud-khalil-al-hussary-profile.avif": "/quran/static/media/mahmoud-khalil-al-hussary-profile.d3502750875a7913a5d8.avif",
     "static/media/mohamed-siddiq-el-minshawi-profile.avif": "/quran/static/media/mohamed-siddiq-el-minshawi-profile.1bd3c5628b773fc08c7f.avif",
     "index.html": "/quran/index.html",
-    "main.4d7e4bb5.css.map": "/quran/static/css/main.4d7e4bb5.css.map",
-    "main.e9ab0660.js.map": "/quran/static/js/main.e9ab0660.js.map"
+    "main.705f0223.css.map": "/quran/static/css/main.705f0223.css.map",
+    "main.58c2f69e.js.map": "/quran/static/js/main.58c2f69e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d7e4bb5.css",
-    "static/js/main.e9ab0660.js"
+    "static/css/main.705f0223.css",
+    "static/js/main.58c2f69e.js"
   ]
 }
